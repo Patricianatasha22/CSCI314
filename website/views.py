@@ -6,6 +6,7 @@ from .models import *
 # Create your views here.
 
 def Logout(request):
+
     if 'AuthorLogged' in request.session:
         del request.session['AuthorLogged']
 
